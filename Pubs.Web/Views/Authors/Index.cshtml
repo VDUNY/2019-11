@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Authors";
+}
+
+<script src="~/js/Authors.js"></script>
+
+<div class="container-fluid">
+    <div class="form-group row">
+        <button type="button" class="col-2 btn btn-primary" id="allAuthorsButton">All Authors</button>
+        <label for="authorSelect" class="col-2" style="text-align: right;">Select author:</label>
+        <select class="form-control col-2" id="authorSelect"></select>
+    </div>
+    <div class="form-check-inline row">
+        <label class="form-check-label">
+            <input id="includeTitles" type="checkbox" class="form-check-input" value="">Include Titles
+        </label>
+    </div>
+
+    <br />
+
+    <div id="authors"></div>
+
+</div>
